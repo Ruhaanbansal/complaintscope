@@ -1,0 +1,22 @@
+{
+  "train_count": 13983,
+  "val_count": 2999,
+  "test_count": 3016,
+  "train_date_range": [
+    "2018-07-19 00:00:00",
+    "2022-03-17 00:00:00"
+  ],
+  "val_date_range": [
+    "2022-03-18 00:00:00",
+    "2022-08-12 00:00:00"
+  ],
+  "test_date_range": [
+    "2022-08-13 00:00:00",
+    "2023-01-26 00:00:00"
+  ],
+  "train_boundary_cutoff": "2022-03-18 00:00:00",
+  "val_boundary_cutoff": "2022-08-13 00:00:00",
+  "random_train_count": 13998,
+  "random_val_count": 3000,
+  "random_test_count": 3000
+}

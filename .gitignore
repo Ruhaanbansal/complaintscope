@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+.pytest_cache/
+
+# Data (Raw files >100MB cannot be pushed to GitHub)
+data/raw/
+data/interim/
+data/processed/*.parquet
+data/processed/*.npy
+
+# Results & Artifacts temporary
+results/metrics/tmp/
+app/artifacts/*.npy
+*.log
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

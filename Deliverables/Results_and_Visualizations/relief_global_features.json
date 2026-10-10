@@ -1,0 +1,166 @@
+{
+  "top_positive_features": [
+    {
+      "feature": "experian",
+      "coef": 3.885422190806796
+    },
+    {
+      "feature": "fee",
+      "coef": 2.8613464879636643
+    },
+    {
+      "feature": "midland",
+      "coef": 2.611320958920245
+    },
+    {
+      "feature": "paypal",
+      "coef": 2.595038543097204
+    },
+    {
+      "feature": "us bank",
+      "coef": 2.577454101622455
+    },
+    {
+      "feature": "fedloan",
+      "coef": 2.5365832437752545
+    },
+    {
+      "feature": "portfolio recovery",
+      "coef": 2.2992104233100292
+    },
+    {
+      "feature": "experian redact",
+      "coef": 2.0933561190691825
+    },
+    {
+      "feature": "syncb",
+      "coef": 2.075434316595159
+    },
+    {
+      "feature": "credence",
+      "coef": 2.052943657243984
+    },
+    {
+      "feature": "bank america",
+      "coef": 2.0491197380940713
+    },
+    {
+      "feature": "transunion credit",
+      "coef": 1.9268730603868585
+    },
+    {
+      "feature": "credit not",
+      "coef": 1.9180822142001785
+    },
+    {
+      "feature": "three",
+      "coef": 1.8564542282328795
+    },
+    {
+      "feature": "america",
+      "coef": 1.845357534299853
+    },
+    {
+      "feature": "charge",
+      "coef": 1.833116382228448
+    },
+    {
+      "feature": "td",
+      "coef": 1.792289616979037
+    },
+    {
+      "feature": "late fee",
+      "coef": 1.7857790924119483
+    },
+    {
+      "feature": "call",
+      "coef": 1.7289737763534674
+    },
+    {
+      "feature": "creditor redact",
+      "coef": 1.725664971833749
+    }
+  ],
+  "top_negative_features": [
+    {
+      "feature": "equifax",
+      "coef": -3.9665349146857056
+    },
+    {
+      "feature": "mortgage",
+      "coef": -2.791431661651975
+    },
+    {
+      "feature": "loan",
+      "coef": -2.226817832501253
+    },
+    {
+      "feature": "navient",
+      "coef": -2.025943533357559
+    },
+    {
+      "feature": "inc",
+      "coef": -1.7929975825933213
+    },
+    {
+      "feature": "equifax credit",
+      "coef": -1.7857572057664128
+    },
+    {
+      "feature": "office",
+      "coef": -1.6531793797055407
+    },
+    {
+      "feature": "find",
+      "coef": -1.5936134389792913
+    },
+    {
+      "feature": "second",
+      "coef": -1.569059610068259
+    },
+    {
+      "feature": "call back",
+      "coef": -1.5397787843809754
+    },
+    {
+      "feature": "property",
+      "coef": -1.5176253906698305
+    },
+    {
+      "feature": "foreclosure",
+      "coef": -1.5053891962618198
+    },
+    {
+      "feature": "monthly",
+      "coef": -1.5018427922535562
+    },
+    {
+      "feature": "never open",
+      "coef": -1.3912698646360633
+    },
+    {
+      "feature": "banking",
+      "coef": -1.3299804501770192
+    },
+    {
+      "feature": "taxis",
+      "coef": -1.3184229648839059
+    },
+    {
+      "feature": "pnc",
+      "coef": -1.3150054916308482
+    },
+    {
+      "feature": "redact company",
+      "coef": -1.3123862037552816
+    },
+    {
+      "feature": "shellpoint",
+      "coef": -1.3067418861852347
+    },
+    {
+      "feature": "verify",
+      "coef": -1.3052757523273022
+    }
+  ]
+}

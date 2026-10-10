@@ -1,0 +1,33 @@
+# Product mapping from raw CFPB Product taxonomy to consolidated classes (7-10 classes)
+# Derived from CFPB taxonomy revisions (pre-2017 and post-2017 product names)
+
+mapping:
+  "Credit reporting, credit repair services, or other personal consumer reports": "Credit reporting & repair"
+  "Credit reporting": "Credit reporting & repair"
+  "Debt collection": "Debt collection"
+  "Mortgage": "Mortgage"
+  "Credit card or prepaid card": "Credit/prepaid card"
+  "Credit card": "Credit/prepaid card"
+  "Prepaid card": "Credit/prepaid card"
+  "Checking or savings account": "Checking/savings account"
+  "Bank account or service": "Checking/savings account"
+  "Student loan": "Student loan"
+  "Vehicle loan or lease": "Vehicle/consumer loan"
+  "Consumer Loan": "Vehicle/consumer loan"
+  "Money transfer, virtual currency, or money service": "Money transfer/virtual currency"
+  "Money transfers": "Money transfer/virtual currency"
+  "Virtual currency": "Money transfer/virtual currency"
+  "Payday loan, title loan, or personal loan": "Payday/personal loan"
+  "Payday loan": "Payday/personal loan"
+  "Other financial service": "Other/Personal loan"
+
+consolidated_classes:
+  - "Credit reporting & repair"
+  - "Debt collection"
+  - "Mortgage"
+  - "Credit/prepaid card"
+  - "Checking/savings account"
+  - "Student loan"
+  - "Vehicle/consumer loan"
+  - "Money transfer/virtual currency"
+  - "Payday/personal loan"

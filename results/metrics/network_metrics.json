@@ -1,0 +1,15 @@
+{
+  "n_companies_bipartite": 2502,
+  "n_issues_bipartite": 170,
+  "n_bipartite_edges": 18204,
+  "n_projection_nodes": 100,
+  "n_projection_edges": 3774,
+  "n_communities": 3,
+  "null_model": {
+    "observed_modularity": 0.2568,
+    "null_mean_modularity": 0.0671,
+    "null_pvalue": 0.0,
+    "n_iterations": 100
+  },
+  "top_company_by_degree": "PENTAGON FEDERAL CREDIT UNION"
+}

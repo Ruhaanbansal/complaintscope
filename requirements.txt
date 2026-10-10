@@ -1,0 +1,46 @@
+# ComplaintScope Pinned Working Dependencies (Python 3.11.9)
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.3
+pyarrow==25.0.1
+scikit-learn==1.5.2
+joblib==1.6.0
+statsmodels==0.15.0
+
+# NLP, Transformers, & Topic Models
+nltk==3.10.3
+spacy==3.7.5
+gensim==4.3.3
+torch==2.5.1
+transformers==4.48.3
+sentence-transformers==3.4.1
+
+# Network & Graphs
+networkx==3.3
+python-louvain==0.16
+pyvis==0.3.2
+
+# Visualization
+matplotlib==3.11.2
+seaborn==0.13.2
+plotly==7.1.0
+wordcloud==1.9.6
+
+# Utilities & Config
+pyyaml==6.0.3
+tqdm==4.70.1
+requests==2.34.2
+jinja2==3.1.6
+
+# Notebooks & Testing
+jupyter==1.1.1
+nbconvert==7.17.1
+nbformat==5.11.1
+ipykernel==7.4.0
+pytest==9.1.1
+
+# Dashboard & Reporting
+streamlit==1.65.0
+python-pptx==1.0.2
+python-docx==1.2.0
+pypandoc_binary==1.17

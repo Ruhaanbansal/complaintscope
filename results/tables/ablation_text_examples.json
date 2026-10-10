@@ -1,0 +1,6 @@
+{
+  "raw_text": "I applied for loans online, a company named Cash Central sent me a message saying I was approved for $ XXXX {$5000.00} dollar loan. I agreed to a {$2000.00} loan in which I would pay {$100.00} dollars a month for a XXXX installment. They emailed me the contract in which I agreed to. They asked for my account number in which I agreed to because they needed to verify that I had a source of income. When they looked into my account they saw that I was over drafted ( that's why I need the loan ) to c",
+  "processed_text": "apply loan online company name cash central send message say approve amt amt dollar loan agree amt loan would pay amt dollar month redact installment email contract agree ask account number agree need verify source income look account see draft need loan cover draft try clear debt say two option could help give loan either show amt would part first month payment clearly not would send amt dollar would cover draft amount send back rest amount good faith happen date keep ask not send rest back yet",
+  "ablation_sample_size_train": 3000,
+  "ablation_sample_size_val": 1000
+}

@@ -1,0 +1,606 @@
+{
+  "lda": {
+    "0": {
+      "label": "creditor / violation / law",
+      "top_words": [
+        "creditor",
+        "violation",
+        "law",
+        "provide",
+        "debt",
+        "act",
+        "fcra",
+        "request",
+        "reporting",
+        "fair"
+      ]
+    },
+    "1": {
+      "label": "amt / balance / charge",
+      "top_words": [
+        "amt",
+        "balance",
+        "charge",
+        "amount",
+        "fee",
+        "pay",
+        "interest",
+        "open",
+        "statement",
+        "due"
+      ]
+    },
+    "2": {
+      "label": "pay / get / go",
+      "top_words": [
+        "pay",
+        "get",
+        "go",
+        "time",
+        "car",
+        "tell",
+        "say",
+        "company",
+        "take",
+        "month"
+      ]
+    },
+    "3": {
+      "label": "consumer / information / identity",
+      "top_words": [
+        "consumer",
+        "information",
+        "identity",
+        "theft",
+        "reporting",
+        "agency",
+        "section",
+        "dispute",
+        "file",
+        "act"
+      ]
+    },
+    "4": {
+      "label": "call / tell / would",
+      "top_words": [
+        "call",
+        "tell",
+        "would",
+        "receive",
+        "back",
+        "say",
+        "speak",
+        "day",
+        "ask",
+        "email"
+      ]
+    },
+    "5": {
+      "label": "transaction / chase / dispute",
+      "top_words": [
+        "transaction",
+        "chase",
+        "dispute",
+        "charge",
+        "claim",
+        "paypal",
+        "fraud",
+        "refund",
+        "amt",
+        "make"
+      ]
+    },
+    "6": {
+      "label": "bankruptcy / court / term",
+      "top_words": [
+        "bankruptcy",
+        "court",
+        "term",
+        "false",
+        "include",
+        "attorney",
+        "record",
+        "state",
+        "financial",
+        "borrower"
+      ]
+    },
+    "7": {
+      "label": "fargo / wells / claim",
+      "top_words": [
+        "fargo",
+        "wells",
+        "claim",
+        "complaint",
+        "compliance",
+        "comenity",
+        "no",
+        "document",
+        "reporting",
+        "cfr"
+      ]
+    },
+    "8": {
+      "label": "card / use / american",
+      "top_words": [
+        "card",
+        "use",
+        "american",
+        "bank",
+        "express",
+        "apply",
+        "purchase",
+        "close",
+        "point",
+        "synchrony"
+      ]
+    },
+    "9": {
+      "label": "payment / late / make",
+      "top_words": [
+        "payment",
+        "late",
+        "make",
+        "pay",
+        "due",
+        "time",
+        "month",
+        "day",
+        "amount",
+        "statement"
+      ]
+    },
+    "10": {
+      "label": "loan / mortgage / home",
+      "top_words": [
+        "loan",
+        "mortgage",
+        "home",
+        "rate",
+        "would",
+        "forbearance",
+        "refinance",
+        "pay",
+        "time",
+        "modification"
+      ]
+    },
+    "11": {
+      "label": "debt / collection / company",
+      "top_words": [
+        "debt",
+        "collection",
+        "company",
+        "owe",
+        "agency",
+        "never",
+        "collect",
+        "name",
+        "contact",
+        "collector"
+      ]
+    },
+    "12": {
+      "label": "letter / send / receive",
+      "top_words": [
+        "letter",
+        "send",
+        "receive",
+        "request",
+        "mail",
+        "provide",
+        "address",
+        "state",
+        "information",
+        "response"
+      ]
+    },
+    "13": {
+      "label": "bank / check / money",
+      "top_words": [
+        "bank",
+        "check",
+        "money",
+        "fund",
+        "amt",
+        "deposit",
+        "tell",
+        "would",
+        "say",
+        "day"
+      ]
+    },
+    "14": {
+      "label": "one / call / no",
+      "top_words": [
+        "one",
+        "call",
+        "no",
+        "number",
+        "bank",
+        "time",
+        "get",
+        "phone",
+        "capital",
+        "try"
+      ]
+    },
+    "15": {
+      "label": "remove / inquiry / information",
+      "top_words": [
+        "remove",
+        "inquiry",
+        "information",
+        "dispute",
+        "equifax",
+        "experian",
+        "please",
+        "open",
+        "transunion",
+        "bureaus"
+      ]
+    }
+  },
+  "nmf": {
+    "0": {
+      "label": "redact / follow / oh",
+      "top_words": [
+        "redact",
+        "follow",
+        "oh",
+        "address",
+        "name",
+        "original",
+        "creditor",
+        "fl",
+        "contact",
+        "please"
+      ]
+    },
+    "1": {
+      "label": "not / get / company",
+      "top_words": [
+        "not",
+        "get",
+        "company",
+        "try",
+        "say",
+        "help",
+        "go",
+        "know",
+        "money",
+        "tell"
+      ]
+    },
+    "2": {
+      "label": "report / credit / remove",
+      "top_words": [
+        "report",
+        "credit",
+        "remove",
+        "bureaus",
+        "information",
+        "reporting",
+        "bureau",
+        "inaccurate",
+        "score",
+        "transunion"
+      ]
+    },
+    "3": {
+      "label": "debt / owe / collect",
+      "top_words": [
+        "debt",
+        "owe",
+        "collect",
+        "collector",
+        "validation",
+        "company",
+        "validate",
+        "allege",
+        "not",
+        "original"
+      ]
+    },
+    "4": {
+      "label": "payment / late / make",
+      "top_words": [
+        "payment",
+        "late",
+        "make",
+        "due",
+        "month",
+        "day",
+        "mortgage",
+        "time",
+        "statement",
+        "miss"
+      ]
+    },
+    "5": {
+      "label": "amt / balance / amount",
+      "top_words": [
+        "amt",
+        "balance",
+        "amount",
+        "acct",
+        "open",
+        "total",
+        "bonus",
+        "owe",
+        "due",
+        "limit"
+      ]
+    },
+    "6": {
+      "label": "date / last / open",
+      "top_words": [
+        "date",
+        "last",
+        "open",
+        "receive",
+        "update",
+        "status",
+        "still",
+        "statement",
+        "show",
+        "removal"
+      ]
+    },
+    "7": {
+      "label": "consumer / information / reporting",
+      "top_words": [
+        "consumer",
+        "information",
+        "reporting",
+        "section",
+        "agency",
+        "act",
+        "fair",
+        "fcra",
+        "law",
+        "violation"
+      ]
+    },
+    "8": {
+      "label": "inquiry / hard / authorize",
+      "top_words": [
+        "inquiry",
+        "hard",
+        "authorize",
+        "credit",
+        "unauthorized",
+        "remove",
+        "not",
+        "company",
+        "pull",
+        "authorization"
+      ]
+    },
+    "9": {
+      "label": "account / open / close",
+      "top_words": [
+        "account",
+        "open",
+        "close",
+        "not",
+        "number",
+        "fraudulent",
+        "name",
+        "remove",
+        "belong",
+        "balance"
+      ]
+    },
+    "10": {
+      "label": "loan / student / mortgage",
+      "top_words": [
+        "loan",
+        "student",
+        "mortgage",
+        "navient",
+        "rate",
+        "interest",
+        "home",
+        "apply",
+        "modification",
+        "forbearance"
+      ]
+    },
+    "11": {
+      "label": "identity / theft / victim",
+      "top_words": [
+        "identity",
+        "theft",
+        "victim",
+        "fraudulent",
+        "mine",
+        "block",
+        "police",
+        "report",
+        "ftc",
+        "result"
+      ]
+    },
+    "12": {
+      "label": "card / credit / use",
+      "top_words": [
+        "card",
+        "credit",
+        "use",
+        "chase",
+        "purchase",
+        "apply",
+        "express",
+        "debit",
+        "american",
+        "fraud"
+      ]
+    },
+    "13": {
+      "label": "call / phone / tell",
+      "top_words": [
+        "call",
+        "phone",
+        "tell",
+        "number",
+        "ask",
+        "would",
+        "speak",
+        "say",
+        "time",
+        "back"
+      ]
+    },
+    "14": {
+      "label": "bank / check / money",
+      "top_words": [
+        "bank",
+        "check",
+        "money",
+        "fund",
+        "deposit",
+        "america",
+        "chase",
+        "transaction",
+        "transfer",
+        "branch"
+      ]
+    },
+    "15": {
+      "label": "item / day / delete",
+      "top_words": [
+        "item",
+        "day",
+        "delete",
+        "dispute",
+        "immediately",
+        "file",
+        "regard",
+        "inaccurate",
+        "investigate",
+        "litigation"
+      ]
+    },
+    "16": {
+      "label": "experian / dispute / bankruptcy",
+      "top_words": [
+        "experian",
+        "dispute",
+        "bankruptcy",
+        "information",
+        "verify",
+        "score",
+        "show",
+        "file",
+        "submit",
+        "freeze"
+      ]
+    },
+    "17": {
+      "label": "pay / bill / full",
+      "top_words": [
+        "pay",
+        "bill",
+        "full",
+        "balance",
+        "insurance",
+        "month",
+        "interest",
+        "owe",
+        "still",
+        "car"
+      ]
+    },
+    "18": {
+      "label": "fargo / wells / mortgage",
+      "top_words": [
+        "fargo",
+        "wells",
+        "mortgage",
+        "claim",
+        "home",
+        "modification",
+        "check",
+        "case",
+        "open",
+        "deny"
+      ]
+    },
+    "19": {
+      "label": "charge / fee / dispute",
+      "top_words": [
+        "charge",
+        "fee",
+        "dispute",
+        "interest",
+        "statement",
+        "make",
+        "fraudulent",
+        "amount",
+        "not",
+        "request"
+      ]
+    },
+    "20": {
+      "label": "capital / one / usa",
+      "top_words": [
+        "capital",
+        "one",
+        "usa",
+        "credit",
+        "jefferson",
+        "two",
+        "auto",
+        "contact",
+        "no",
+        "provide"
+      ]
+    },
+    "21": {
+      "label": "letter / send / receive",
+      "top_words": [
+        "letter",
+        "send",
+        "receive",
+        "request",
+        "response",
+        "mail",
+        "verify",
+        "dispute",
+        "respond",
+        "certify"
+      ]
+    },
+    "22": {
+      "label": "equifax / information / file",
+      "top_words": [
+        "equifax",
+        "information",
+        "file",
+        "report",
+        "update",
+        "complaint",
+        "submit",
+        "dispute",
+        "verify",
+        "incorrect"
+      ]
+    },
+    "23": {
+      "label": "collection / agency / company",
+      "top_words": [
+        "collection",
+        "agency",
+        "company",
+        "service",
+        "dispute",
+        "bill",
+        "contact",
+        "medical",
+        "contract",
+        "never"
+      ]
+    }
+  }
+}

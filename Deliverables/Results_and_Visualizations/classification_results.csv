@@ -1,0 +1,10 @@
+model,val_macro_f1,test_macro_f1,test_accuracy,ci_lo_95,ci_hi_95
+LinearSVC (calibrated),0.7349,0.7394,0.8743,0.7079,0.7666
+LogisticRegression (tuned),0.7171,0.7319,0.8727,0.698,0.7606
+LogisticRegression,0.6644,0.7054,0.873,0.6668,0.734
+MiniLM-L6 + LR,0.7157,0.7002,0.8568,0.6676,0.7303
+ComplementNB,0.6264,0.6457,0.8548,0.6167,0.6732
+MultinomialNB,0.6206,0.6218,0.8485,0.5922,0.6473
+DecisionTree (depth=10),0.507,0.4765,0.7725,0.4451,0.5049
+DummyClassifier (stratified),0.0923,0.095,0.3107,0.0858,0.1052
+DummyClassifier (majority),0.0865,0.0873,0.6469,0.0858,0.0887

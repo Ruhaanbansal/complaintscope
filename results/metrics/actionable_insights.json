@@ -1,0 +1,26 @@
+[
+  {
+    "insight": "The top-5 highest SRI companies (TRANSUNION INTERMEDIATE HOLDINGS, INC., Experian Information Solutions Inc., EQUIFAX, INC., TD BANK US HOLDING COMPANY, U.S. BANCORP) account for disproportionate complaint volume and systemic breadth.",
+    "action": "Regulatory priority visits and enhanced disclosure requirements.",
+    "confidence": "High",
+    "limitation": "SRI is based on complaint volume, not absolute harm; large institutions may appear disproportionately high simply due to market share."
+  },
+  {
+    "insight": "5 high-SRI companies show consistently low consumer relief rates, suggesting structural consumer protection deficiencies.",
+    "action": "Mandate enhanced consumer remediation protocols and independent audit.",
+    "confidence": "Medium",
+    "limitation": "Relief labels are self-reported by institutions; independent validation needed."
+  },
+  {
+    "insight": "3 companies show cross-product systemic issue breadth, indicating firm-wide consumer protection failures rather than product-specific incidents.",
+    "action": "Initiate institution-wide supervisory review.",
+    "confidence": "Medium-High",
+    "limitation": "Breadth is determined by issue taxonomy diversity; some broad institutions may simply serve more product verticals."
+  },
+  {
+    "insight": "Complaint surge detection (Phase 7) identified COVID-era forbearance and credit reporting as the fastest-growing complaint categories (2020-2021 period).",
+    "action": "Proactive consumer advisory communications and targeted institution guidance.",
+    "confidence": "High",
+    "limitation": "Keyword proxy validation uses self-selected narrative terms; may under-detect issues in communities with lower narrative opt-in rates."
+  }
+]

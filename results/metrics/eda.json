@@ -1,0 +1,10 @@
+{
+  "total_cleaned_sample": 19998,
+  "median_narrative_words": 136.0,
+  "mean_narrative_words": 200.16831683168317,
+  "overall_relief_rate": 0.21062106210621065,
+  "num_products": 9,
+  "top_product": "Credit reporting & repair",
+  "top_product_share": 0.5118011801180118,
+  "redacted_token_share": 0.853985398539854
+}

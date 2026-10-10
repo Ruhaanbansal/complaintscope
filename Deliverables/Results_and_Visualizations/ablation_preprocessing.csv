@@ -1,0 +1,8 @@
+config,macro_f1,accuracy,elapsed_sec,redact_mode,lowercase,remove_stopwords,lemmatize,keep_negations
+No Redaction Handling,0.514,0.826,107.7,delete,True,True,True,True
+Baseline (raw text),0.4991,0.823,138.8,placeholder,True,True,True,True
+No Lowercase,0.4978,0.823,117.9,placeholder,False,True,True,True
+No Negation Preservation,0.4976,0.821,113.6,placeholder,True,True,True,False
+No Lemmatization,0.4635,0.808,9.5,placeholder,True,True,False,True
+No Stopword Removal,0.4236,0.812,114.9,placeholder,True,False,True,True
+Minimal (raw lowercase),0.4203,0.796,12.0,delete,True,False,False,False

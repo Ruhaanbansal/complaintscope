@@ -1,0 +1,47 @@
+{
+  "mean_kendall_tau": 0.6374,
+  "std_kendall_tau": 0.2321,
+  "n_perturbations": 100,
+  "rank_ranges": {
+    "TRANSUNION INTERMEDIATE HOLDINGS, INC.": {
+      "min_rank": 1,
+      "max_rank": 51
+    },
+    "Experian Information Solutions Inc.": {
+      "min_rank": 2,
+      "max_rank": 51
+    },
+    "EQUIFAX, INC.": {
+      "min_rank": 2,
+      "max_rank": 51
+    },
+    "TD BANK US HOLDING COMPANY": {
+      "min_rank": 1,
+      "max_rank": 51
+    },
+    "U.S. BANCORP": {
+      "min_rank": 1,
+      "max_rank": 51
+    },
+    "CAPITAL ONE FINANCIAL CORPORATION": {
+      "min_rank": 1,
+      "max_rank": 51
+    },
+    "SYNCHRONY FINANCIAL": {
+      "min_rank": 3,
+      "max_rank": 51
+    },
+    "CITIBANK, N.A.": {
+      "min_rank": 5,
+      "max_rank": 51
+    },
+    "BANK OF AMERICA, NATIONAL ASSOCIATION": {
+      "min_rank": 3,
+      "max_rank": 51
+    },
+    "Bread Financial Holdings, Inc.": {
+      "min_rank": 4,
+      "max_rank": 51
+    }
+  }
+}

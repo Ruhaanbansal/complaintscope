@@ -1,0 +1,154 @@
+# ==============================================================================
+# ComplaintScope Configuration File
+# Single source of truth for paths, seeds, thresholds, grids, and settings.
+# ==============================================================================
+
+# Global settings
+project_name: "ComplaintScope"
+seed: 42
+mode: "fast" # "fast" (~20k sample for rapid smoke/dev) or "full" (~150k sample)
+
+# Paths
+paths:
+  raw_zip: "data/raw/complaints.csv.zip"
+  raw_csv_name: "complaints.csv"
+  interim_clean: "data/interim/complaints_clean.parquet"
+  interim_prepped: "data/interim/complaints_prepped.parquet"
+  interim_agg_product: "data/interim/aggregates_product_monthly.parquet"
+  interim_agg_company: "data/interim/aggregates_company_monthly.parquet"
+  interim_agg_company_issue: "data/interim/aggregates_company_issue.parquet"
+  interim_agg_proxies: "data/interim/aggregates_proxies_monthly.parquet"
+  interim_agg_narrative: "data/interim/aggregates_narrative_monthly.parquet"
+  processed_splits: "data/processed/splits_metadata.json"
+  sample_demo_csv: "data/sample/complaints_demo_2k.csv"
+  app_artifacts_dir: "app/artifacts"
+  results_figures_dir: "results/figures"
+  results_tables_dir: "results/tables"
+  results_metrics_dir: "results/metrics"
+  figure_catalog_csv: "results/figure_catalog.csv"
+  product_mapping: "product_mapping.yaml"
+
+# Data selection and sampling
+data:
+  date_start: "2018-01-01"
+  date_end: "2023-12-31" # Updated dynamically to latest complete month in Phase 1 if broader
+  min_narrative_words: 20
+  sample_size_fast: 20000
+  sample_size_full: 150000
+  split_ratios:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+
+# Preprocessing & Vectorization
+preprocessing:
+  redaction_mode: "placeholder" # options: "delete", "placeholder"
+  lemmatize: true
+  min_token_len: 2
+
+features:
+  bow:
+    max_features: 5000
+    min_df: 5
+    max_df: 0.5
+    ngram_range: [1, 1]
+  tfidf:
+    max_features: 10000
+    min_df: 5
+    max_df: 0.5
+    sublinear_tf: true
+    ngram_range: [1, 2]
+  embeddings:
+    model_name: "all-MiniLM-L6-v2"
+    batch_size: 256
+    max_seq_length: 128
+    cache_file: "data/processed/embeddings_minilm.npy"
+
+# Modeling: Product Classification
+classification:
+  cv_splits: 3
+  n_boot: 1000
+  top_k_ratios: [0.05, 0.10, 0.20]
+  logistic_regression:
+    C_values: [0.1, 1.0, 5.0]
+    solver: "saga"
+    max_iter: 1000
+  linear_svm:
+    C_values: [0.1, 0.5, 1.0]
+  decision_tree:
+    max_depth: 25
+    min_samples_split: 50
+
+# Modeling: Relief-Risk Prediction
+relief:
+  n_boot: 1000
+  top_k_ratios: [0.05, 0.10, 0.20]
+  hgb:
+    max_iter: 150
+    learning_rate: 0.1
+    max_depth: 8
+  svd_components: 100
+
+# Topic Modeling
+topics:
+  k_range: [8, 12, 16, 20, 24]
+  chosen_k: 12
+  random_state: 42
+  coherence_measure: "c_v"
+  kmeans_clusters: 12
+  kmeans_sample: 10000
+
+# Emerging Issue Detection & Validation
+emerging:
+  baseline_months: 12
+  z_threshold: 2.5
+  min_monthly_count: 30
+  consecutive_months: 2
+  ewma_span: 6
+  ewma_threshold: 2.0
+  # Pre-registered keyword proxy signals for independent validation
+  proxies:
+    pandemic_forbearance:
+      pattern: '(?i)(covid|coronavirus|pandemic|forbearance|cares\s+act|stimulus)'
+      description: "COVID-19 pandemic relief, CARES Act, forbearance"
+    scam_fraud_transfers:
+      pattern: '(?i)(zelle|scam|scammed|fraud(ulent)?\s+transfer|wire\s+fraud|unauthorized\s+transfer)'
+      description: "Digital payment scams, Zelle/wire unauthorized transfers"
+    identity_theft:
+      pattern: '(?i)(identity\s+theft|stolen\s+identity|imposter|fraudulent\s+account)'
+      description: "Identity theft and fraudulent account openings"
+    credit_report_inaccuracy:
+      pattern: '(?i)(not\s+my\s+account|incorrect\s+information|inaccurate\s+reporting|dispute(d)?\s+item)'
+      description: "Credit reporting errors and disputed inaccurate records"
+    student_loan_servicing:
+      pattern: '(?i)(student\s+loan|servicer|nelnet|mohela|aidvantage|payment\s+pause|repayment\s+plan)'
+      description: "Student loan servicing, transfers, and repayment changes"
+    crypto_virtual_currency:
+      pattern: '(?i)(bitcoin|crypto|coinbase|virtual\s+currency|binance|wallet)'
+      description: "Cryptocurrency exchanges and virtual currency issues"
+
+# Network Analysis
+network:
+  min_company_complaints: 200
+  cosine_similarity_threshold: 0.40
+  top_k_neighbors: 5
+  null_model_iterations: 100
+  louvain_resolution: 1.0
+
+# Systemic Risk Index (SRI)
+risk_index:
+  recent_window_months: 6
+  weights:
+    burst_intensity: 0.25
+    recent_growth: 0.25
+    company_breadth: 0.20
+    relief_rate: 0.15
+    complaint_volume: 0.15
+
+# Visualization standards
+viz:
+  dpi: 200
+  style: "seaborn-v0_8-whitegrid"
+  palette: "deep"
+  figure_format: "png"
+  font_family: "sans-serif"

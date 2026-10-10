@@ -1,0 +1,22 @@
+true_label,pred_label,count
+Debt collection,Credit reporting & repair,8
+Credit reporting & repair,Debt collection,8
+Checking/savings account,Credit/prepaid card,8
+Checking/savings account,Credit reporting & repair,4
+Money transfer/virtual currency,Checking/savings account,4
+Credit/prepaid card,Credit reporting & repair,4
+Student loan,Credit reporting & repair,3
+Checking/savings account,Money transfer/virtual currency,3
+Money transfer/virtual currency,Credit/prepaid card,2
+Debt collection,Credit/prepaid card,2
+Credit/prepaid card,Checking/savings account,2
+Credit reporting & repair,Mortgage,2
+Vehicle/consumer loan,Payday/personal loan,2
+Credit reporting & repair,Student loan,1
+Mortgage,Credit reporting & repair,1
+Payday/personal loan,Checking/savings account,1
+Payday/personal loan,Credit reporting & repair,1
+Payday/personal loan,Debt collection,1
+Checking/savings account,Debt collection,1
+Vehicle/consumer loan,Credit reporting & repair,1
+Vehicle/consumer loan,Credit/prepaid card,1

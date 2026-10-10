@@ -1,0 +1,8 @@
+{
+  "best": "LinearSVC (calibrated)",
+  "vs": "DummyClassifier (majority)",
+  "statistic": 535.6449771689498,
+  "pvalue": 1.6705734811278458e-118,
+  "b": 781,
+  "c": 95
+}

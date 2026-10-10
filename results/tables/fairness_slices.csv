@@ -1,0 +1,15 @@
+dimension,slice,n,base_rate,pr_auc
+submitted_via,Web,3016,0.317,0.3865
+tags,Unknown,2601,0.3322,0.3992
+tags,Servicemember,275,0.1964,0.2939
+tags,Older American,108,0.287,0.3533
+tags,"Older American, Servicemember",32,0.2188,0.4361
+state,GA,237,0.3291,0.3595
+state,PA,129,0.3643,0.5233
+state,IL,154,0.3506,0.4203
+state,TX,256,0.3008,0.3678
+state,NC,131,0.3282,0.4244
+state,NY,169,0.3846,0.44
+state,VA,74,0.2838,0.5406
+state,FL,334,0.3234,0.3738
+state,MD,72,0.2083,0.2208

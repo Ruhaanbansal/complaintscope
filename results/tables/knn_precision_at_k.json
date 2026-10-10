@@ -1,0 +1,6 @@
+{
+  "Precision@1": 0.8023,
+  "Precision@3": 0.9186,
+  "Precision@5": 0.9426,
+  "Precision@10": 0.967
+}

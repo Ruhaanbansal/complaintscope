@@ -1,0 +1,151 @@
+{
+  "project": "ComplaintScope",
+  "mode": "fast",
+  "seed": 42,
+  "git_hash": "unknown",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.3",
+    "sklearn": "1.5.2",
+    "nltk": "3.10.3",
+    "spacy": "3.7.5",
+    "gensim": "4.3.3",
+    "networkx": "3.3",
+    "torch": "2.5.1+cpu"
+  },
+  "last_updated": "2026-10-08T16:04:17.236270",
+  "phases": {
+    "Phase_0_Scaffold": {
+      "duration_sec": 120.0,
+      "completed_at": "2026-10-08T14:16:15.142205",
+      "status": "completed",
+      "tests_passed": 6
+    },
+    "Phase_1_Data_Collection": {
+      "duration_sec": 411.6,
+      "completed_at": "2026-10-08T14:35:37.447352",
+      "sample_size": 19998,
+      "funnel_stats": {
+        "initial_narratives": 878262,
+        "after_date_range": 878262,
+        "after_min_words": 843534,
+        "after_dedup": 712092,
+        "after_relief_filter": 710248,
+        "final_sampled": 19998,
+        "duplicates_dropped": 131442
+      },
+      "splits": {
+        "train_count": 13983,
+        "val_count": 2999,
+        "test_count": 3016,
+        "train_date_range": [
+          "2018-07-19 00:00:00",
+          "2022-03-17 00:00:00"
+        ],
+        "val_date_range": [
+          "2022-03-18 00:00:00",
+          "2022-08-12 00:00:00"
+        ],
+        "test_date_range": [
+          "2022-08-13 00:00:00",
+          "2023-01-26 00:00:00"
+        ],
+        "train_boundary_cutoff": "2022-03-18 00:00:00",
+        "val_boundary_cutoff": "2022-08-13 00:00:00",
+        "random_train_count": 13998,
+        "random_val_count": 3000,
+        "random_test_count": 3000
+      }
+    },
+    "Phase_2_Preprocessing": {
+      "duration_sec": 1219.8,
+      "completed_at": "2026-10-08T15:21:22.848615",
+      "best_config": "No Redaction Handling",
+      "best_macro_f1": 0.514,
+      "ablation_configs_tested": 7,
+      "ablation_table": "C:\\Users\\Dell\\Downloads\\complaintscope\\results\\tables\\ablation_preprocessing.csv"
+    },
+    "Phase_4_Classification": {
+      "duration_sec": 320.59,
+      "completed_at": "2026-10-08T15:48:41.584230",
+      "best_model": "LinearSVC (calibrated)",
+      "best_test_macro_f1": 0.7394,
+      "aq3_result": {
+        "chronological_test_macro_f1": 0.7317,
+        "random_test_macro_f1": 0.933,
+        "f1_drop": 0.2013
+      }
+    },
+    "Phase_5_Relief": {
+      "duration_sec": 61.21,
+      "completed_at": "2026-10-08T15:56:59.932945",
+      "best_model": "Text LR",
+      "best_pr_auc": 0.3865,
+      "n_models": 4
+    },
+    "Phase_6_Topics": {
+      "duration_sec": 723.35,
+      "completed_at": "2026-10-08T16:00:45.236856",
+      "best_k_lda": 16,
+      "lda_sweep_k_range": [
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "topic_labels_saved": "results\\metrics\\topic_labels.json"
+    },
+    "Phase_7_Burst": {
+      "duration_sec": 8.48,
+      "completed_at": "2026-10-08T16:00:54.014947",
+      "proxies_validated": [
+        "covid_relief",
+        "overdraft_fee",
+        "credit_reporting",
+        "debt_collection",
+        "mortgage_forbearance"
+      ],
+      "topic_burst_topics": 16
+    },
+    "Phase_9_SRI": {
+      "duration_sec": 27.39,
+      "completed_at": "2026-10-08T16:04:17.236270",
+      "top_company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+      "sensitivity_tau": 0.6374,
+      "insights_generated": 4
+    },
+    "Phases_4_to_9_Runner": {
+      "duration_sec": 1104.6,
+      "completed_at": "2026-10-08T16:01:34.791521",
+      "phase_timings": {
+        "Phase 4": 327.4,
+        "Phase 5": "FAILED",
+        "Phase 6": 723.6,
+        "Phase 7": 8.7,
+        "Phase 8": "FAILED",
+        "Phase 9": 20.9,
+        "Notebooks": 3.1
+      }
+    },
+    "Phase_8_Network": {
+      "duration_sec": 25.43,
+      "completed_at": "2026-10-08T16:03:17.844229",
+      "n_companies_bipartite": 2502,
+      "n_issues_bipartite": 170,
+      "n_bipartite_edges": 18204,
+      "n_projection_nodes": 100,
+      "n_projection_edges": 3774,
+      "n_communities": 3,
+      "null_model": {
+        "observed_modularity": 0.2568,
+        "null_mean_modularity": 0.0671,
+        "null_pvalue": 0.0,
+        "n_iterations": 100
+      },
+      "top_company_by_degree": "PENTAGON FEDERAL CREDIT UNION"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "project": "ComplaintScope",
+  "version": "1.0.0",
+  "seed": 42,
+  "python_version": "3.11.9",
+  "platform": "Windows-10-x86_64",
+  "verification_timestamp": "2026-10-08T20:20:00+05:30",
+  "reproducibility_status": "FULLY_VERIFIED",
+  "total_records_processed": 19998,
+  "dataset_splits": {
+    "train_records": 13983,
+    "val_records": 2999,
+    "test_records": 3016,
+    "partition_type": "chronological_70_15_15",
+    "lookahead_leakage": false
+  },
+  "headline_metrics": {
+    "preprocessing_champion": {
+      "pipeline": "No Redaction",
+      "val_macro_f1": 0.5140,
+      "minimal_pipeline_macro_f1": 0.4203,
+      "absolute_gain_pp": 9.37
+    },
+    "feature_retrieval_knn": {
+      "p_at_1": 0.802,
+      "p_at_3": 0.919,
+      "p_at_5": 0.943,
+      "p_at_10": 0.967
+    },
+    "product_classification": {
+      "champion_model": "LinearSVC",
+      "test_macro_f1": 0.7394,
+      "test_accuracy": 0.8743,
+      "macro_f1_95_ci": [0.7079, 0.7666],
+      "mcnemar_chi2": 535.64,
+      "mcnemar_p_value": 1.67e-118,
+      "aq3_random_split_macro_f1": 0.9330,
+      "aq3_chrono_split_macro_f1": 0.7317,
+      "temporal_drift_delta": -0.2013
+    },
+    "relief_risk_scoring": {
+      "champion_model": "Logistic Regression (Text Features)",
+      "test_pr_auc": 0.3865,
+      "test_roc_auc": 0.6063,
+      "test_brier_score": 0.2316,
+      "baseline_prior_rate": 0.3170,
+      "triage_precision_at_5pct": 0.4467,
+      "triage_lift_at_5pct": 1.41,
+      "triage_precision_at_10pct": 0.4286,
+      "triage_lift_at_10pct": 1.35,
+      "triage_recall_at_20pct": 0.2448,
+      "company_feature_ablation_delta_pr_auc": -0.0165
+    },
+    "topic_modeling": {
+      "algorithm": "LDA",
+      "optimal_k": 16,
+      "coherence_c_v": 0.5009,
+      "topic_diversity": 0.7312
+    },
+    "emerging_burst_detection": {
+      "detectors": ["rolling_zscore", "ewma_cusum"],
+      "rolling_zscore_params": {"window": 12, "threshold": 2.0},
+      "ewma_cusum_params": {"span": 6, "threshold": 1.5},
+      "validation_proxies": {
+        "mortgage_forbearance": {"z_precision": 1.0, "cusum_f1": 0.8000},
+        "covid_relief": {"cusum_f1": 0.7568, "early_warning_months": 2},
+        "overdraft_fee": {"z_precision": 1.0, "cusum_f1": 0.3636}
+      }
+    },
+    "bipartite_network_analysis": {
+      "bipartite_nodes_companies": 2502,
+      "bipartite_nodes_issues": 170,
+      "bipartite_edges": 18204,
+      "company_projection_nodes": 100,
+      "company_projection_edges": 3774,
+      "louvain_communities": 3,
+      "modularity_q": 0.2568,
+      "null_model_q_mean": 0.0671,
+      "null_model_p_value": 0.000,
+      "breadth_leader_wells_fargo": 168,
+      "breadth_leader_jpmorgan": 167
+    },
+    "systemic_risk_index": {
+      "top_institutions": [
+        {"rank": 1, "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.", "sri": 0.7819},
+        {"rank": 2, "company": "Experian Information Solutions Inc.", "sri": 0.7187},
+        {"rank": 3, "company": "EQUIFAX, INC.", "sri": 0.6825}
+      ],
+      "sensitivity_kendall_tau_mean": 0.6374,
+      "sensitivity_kendall_tau_std": 0.2321,
+      "perturbation_draws": 100
+    }
+  },
+  "artifacts_manifest": {
+    "dashboard_artifacts_count": 12,
+    "dashboard_total_size_mb": 9.4,
+    "figures_count": 25,
+    "notebooks_count": 9,
+    "report_docx_size_kb": 301,
+    "presentation_pptx_size_mb": 2.36,
+    "pytest_passed_count": 20,
+    "pytest_failed_count": 0
+  }
+}
