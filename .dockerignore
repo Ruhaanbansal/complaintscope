@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.git/
+.gitignore
+data/raw/
+data/interim/
+Deliverables/Dataset/*.parquet
+Deliverables/Dataset/*.csv
+*.log
